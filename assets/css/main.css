@@ -124,6 +124,10 @@ input, select, textarea {
 
 /* Icon */
 
+	img {
+		border-radius: 50%;
+	}
+
 	.icon {
 		text-decoration: none;
 		position: relative;
