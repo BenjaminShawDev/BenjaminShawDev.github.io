@@ -19,7 +19,7 @@
 				
 				<!-- Header -->
 					<header id="header">
-						<img class="img-circle" src="assets/css/images/pictureOfMe.png" height="20%" width="20%">
+						<img class="img-circle" src="assets/css/images/pictureOfMe2.png" height="20%" width="20%">
 						<h1>Benjamin Shaw</h1>
 						<p>Student &nbsp;&bull;&nbsp; Programmer &nbsp;&bull;&nbsp; Games</p>
 						<nav>
@@ -27,12 +27,66 @@
 								<li><a href="https://twitter.com/Benjami75291244"target="_blank" class="icon brands fa-twitter-square"><span class="label">Twitter</span></a></li>
 								<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/"target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/BenjaminShawDev"target="_blank" class="icon brands fa-github-square"><span class="label">Github</span></a></li>
-								<li><a href="#blackout" a class="fas fa-info"></a></li>
+								<p></p>
+								<button type="button" class="collapsible">More Info</button>
+								<div class="content">
+										<p>Studying computer games programming at Staffordshire University</p>
+										<p></p>
+										<p>Projects:</p>
+										<p></p>
+										<a href="#blackout">My Pacman Project (C++ // Visual Studio // 2D)</a>
+										<p></p>
+										<a href="#blackout2">My Mario Project (C++ // SDL // 2D)</a>
+										<p></p>
+										<a href="#blackout3">Asteroid OpenGL Project (C++ // OpenGL // 3D)</a>
+										<p></p>
+								</div>
+
+									<script>
+									var coll = document.getElementsByClassName("collapsible");
+									var i;
+
+									for (i = 0; i < coll.length; i++) {
+									  coll[i].addEventListener("click", function() {
+										this.classList.toggle("active");
+										var content = this.nextElementSibling;
+										if (content.style.maxHeight){
+										  content.style.maxHeight = null;
+										} else {
+										  content.style.maxHeight = content.scrollHeight + "px";
+										}
+									  });
+									}
+									</script>
 								
-								<meta charset="utf-8">
-								<title>Page title</title>
 								<style>
+									.content {
+									  padding: 0 18px;
+									  background-color: white;
+									  max-height: 0;
+									  overflow: hidden;
+									  transition: max-height 0.2s ease-out;
+									}
+								
 									#blackout {
+										background: rgba(0, 0, 0, 0);
+										width: 100%;
+										height: 100%;
+										position: absolute;
+										top: 0;
+										left: 0;
+										display: none;
+									}
+									#blackout2 {
+										background: rgba(0, 0, 0, 0);
+										width: 100%;
+										height: 100%;
+										position: absolute;
+										top: 0;
+										left: 0;
+										display: none;
+									}
+									#blackout3 {
 										background: rgba(0, 0, 0, 0);
 										width: 100%;
 										height: 100%;
@@ -69,27 +123,77 @@
 										font-size: 20pt;
 										cursor:pointer;
 									  }
+									  #blackout2:target {display: block;}
+									  .close {
+										display: inline-block;
+										border: 1px solid #000000;
+										color: #ffffff;
+										padding: 0 12px;
+										margin: auto;
+										text-decoration: none;
+										background: #000000;
+										font-size: 20pt;
+										cursor:pointer;
+									  }
+									  #blackout3:target {display: block;}
+									  .close {
+										display: inline-block;
+										border: 1px solid #000000;
+										color: #ffffff;
+										padding: 0 12px;
+										margin: auto;
+										text-decoration: none;
+										background: #000000;
+										font-size: 20pt;
+										cursor:pointer;
+									  }
 									  .close:hover {background: #000000;}
 									</style>
 								  </head>
 								 
 								  <body>
-								   
 									<div id="blackout">
-									  <div id="box">
-										About me:<br>
-										<p>Studying computer games programming at Staffordshire University</p>
-										<p></p>
-										<a href="https://github.com/s012103j/Pacman"target="_blank">My Pacman Project (C++ // Visual Studio // 2D)</a>
-										<p></p>
-										<a href="https://github.com/BenjaminShawDev/Mario"target="_blank">My Mario Project (C++ // Visual Studio // 2D)</a>
-										<p></p>
-										<a href="https://github.com/BenjaminShawDev/OpenGL"target="_blank">My OpenGL Project (C++ // OpenGL // 3D)</a>
-										<p></p>
-										<a href="#" class="close"><i class="far fa-times-circle"></i></a>
+										<div id="box">
+											<p>Pacman Game</p>
+											<p></p>
+											<p>A simple game with the theme of Pacman but plays slightly differently</p>
+											<p>The goal is to collect all 50 randomly spread out munchies on the screen however there are no walls, the ghosts will travel across random parts of the screen and there are powerups that can be picked up</p>
+											<p></p>
+											<img src="assets/css/images/PacmanPics/Pacman1.png" height="=30%" width="30%">
+											<img src="assets/css/images/PacmanPics/Pacman2.png" height="=30%" width="30%">
+											<p><a href="https://github.com/s012103j/Pacman"target="_blank">Github link</a></p>
+											<p></p>
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
+										</div>
 									</div>
-								</div>
-								
+									
+									<div id="blackout2">
+										<div id="box">
+											<p>Mario Game</p>
+											<p></p>
+											<p>A short and simple Mario game made in SDL consisting of two levels and two players controlled via a single keyboard</p>
+											<p>To win the game you have to collect all of the coins on the second level without losing both Mario and Luigi</p>
+											<img src="assets/css/images/MarioPics/Mario1.png" height="=30%" width="30%">
+											<img src="assets/css/images/MarioPics/Mario2.png" height="=30%" width="30%">
+											<p><a href="https://github.com/BenjaminShawDev/Mario"target="_blank">Github link</a></p>
+											<p></p>
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
+										</div>
+									</div>
+									
+									<div id="blackout3">
+										<div id="box">
+											<p>Asteroid Game</p>
+											<p></p>
+											<p>A 3D game made in OpenGL where you get to control a space ship in an asteroid field</p>
+											<p>You have to dodge oncoming asteroids and survive as long as possible, there are also different powerups that your ship can pick up in order to help you</p>
+											<img src="assets/css/images/AsteroidPics/Asteroid1.png" height="=30%" width="30%">
+											<img src="assets/css/images/AsteroidPics/Asteroid2.png" height="=30%" width="30%">
+											<p><a href="https://github.com/BenjaminShawDev/OpenGL"target="_blank">Github link</a></p>
+											<p></p>
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
+										</div>
+									</div>
 								
 							</ul>
 						</nav>
