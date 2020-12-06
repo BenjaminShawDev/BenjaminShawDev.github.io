@@ -28,49 +28,24 @@
 								<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/"target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/BenjaminShawDev"target="_blank" class="icon brands fa-github-square"><span class="label">Github</span></a></li>
 								<p></p>
-								<button type="button" class="collapsible">More Info</button>
-								<div class="content">
-										<h1 style="font-size:30px">Currently in my second year studying computer games programming at Staffordshire University</h1>
-										<p></p>
-										<u>Projects:</u>
-										<p></p>
-										<a href="#blackout">Uni Pacman Project (C++ // Visual Studio // 2D) &nbsp;&nbsp; |</a>
-										<a href="#blackout2">&nbsp;&nbsp; Uni Mario Project (C++ // SDL // 2D)</a>
-										<p></p>
-										<a href="#blackout3">Uni Asteroid OpenGL Project (C++ // OpenGL // 3D) &nbsp;&nbsp; |</a>
-										<a href="#blackout4">&nbsp;&nbsp; SDL Summer 2020 Project (C++ // SDL // 2D)</a>
-										<p></p>
-										<a href="#blackout5">(WIP) Uni DirectX Framework (C++ // DirectX 11 // 3D) &nbsp;&nbsp; |</a>
-										<a href="#blackout6">&nbsp;&nbsp; (WIP) Uni Network Application (C# // Windows Form // Multithreaded)</a>
-										<p></p>
-								</div>
-
-									<script>
-									var coll = document.getElementsByClassName("collapsible");
-									var i;
-
-									for (i = 0; i < coll.length; i++) {
-									  coll[i].addEventListener("click", function() {
-										this.classList.toggle("active");
-										var content = this.nextElementSibling;
-										if (content.style.maxHeight){
-										  content.style.maxHeight = null;
-										} else {
-										  content.style.maxHeight = content.scrollHeight + "px";
-										}
-									  });
-									}
-									</script>
+								<h1 style="font-size:30px">Currently in my second year studying computer games programming at Staffordshire University</h1>
+								<p></p>
+								<u>Projects:</u>
+								<p></p>
+								<a href="#blackout" style="font-size:20px">Uni Pacman Project (C++ // Visual Studio // 2D)</a>
+								<p></p>
+								<a href="#blackout2" style="font-size:20px">Uni Mario Project (C++ // SDL // 2D)</a>
+								<p></p>
+								<a href="#blackout3" style="font-size:20px">Uni Asteroid OpenGL Project (C++ // OpenGL // 3D)</a>
+								<p></p>
+								<a href="#blackout4" style="font-size:20px">SDL Summer 2020 Project (C++ // SDL // 2D)</a>
+								<p></p>
+								<a href="#blackout5" style="font-size:20px">(WIP) Uni DirectX Framework (C++ // DirectX 11 // 3D)</a>
+								<p></p>
+								<a href="#blackout6" style="font-size:20px">(WIP) Uni Network Application (C# // Windows Form // Multithreaded)</a>
+								<p></p>
 								
-								<style>
-									.content {
-									  padding: 0 18px;
-									  background-color: black;
-									  max-height: 0;
-									  overflow: hidden;
-									  transition: max-height 0.2s ease-out;
-									}
-								
+								<style>								
 									#blackout {
 										background: rgba(0, 0, 0, 0);
 										width: 100%;
@@ -220,83 +195,101 @@
 								  <body>
 									<div id="blackout">
 										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 											<hl style="font-size:30px"><u>Pacman Game</u></hl>
 											<p></p>
 											<p>A simple game with the theme of Pacman but plays slightly differently</p>
-											<p>The goal is to collect all 50 randomly spread out munchies on the screen however there are no walls, the ghosts will travel across random parts of the screen and there are powerups that can be picked up</p>
-											<p>You can also use your mouse to move a box which deflect ghosts to help protect Pacman from being hit</p>
+											<p>The 50 munchies are spread out randomly and are put through a for loop to detect if any overlap and if any do they are moved to another location on the screen</p>
+											<p>There is a box that follows the mouse, the box can detect collisions via AABB collision, if the box touches a ghost the ghost is sent in the opposite direction, and while the box collides with Pacman it disappears</p>
+											<p>If you pick up the skull the ghosts change behaviour, instead of travelling up or across they instead move towards Pacman by comparing their X and Y coordinates with Pacman's and move accordingly</p>
 											<p></p>
-											<img src="assets/css/images/PacmanPics/Pacman1.png" height="=40%" width="40%">
-											<img src="assets/css/images/PacmanPics/Pacman2.png" height="=40%" width="40%">
+											<!--<img src="assets/css/images/PacmanPics/Pacman1.png" height="=40%" width="40%">
+											<img src="assets/css/images/PacmanPics/Pacman2.png" height="=40%" width="40%">-->
+											<video width="1280" height="720" controls>
+												<source src="assets/css/videos/Pacman.mp4" type="video/mp4">
+											</video>
 											<p><a href="https://github.com/s012103j/Pacman"target="_blank">Github link</a></p>
 											<p></p>
-											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 										</div>
 									</div>
 									
 									<div id="blackout2">
 										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 											<hl style="font-size:30px"><u>Mario Game</u></hl>
 											<p></p>
 											<p>A short and simple Mario game made in SDL consisting of two levels and two players controlled via a single keyboard</p>
-											<p>To win the game you have to collect all of the coins on the second level without losing both Mario and Luigi</p>
-											<img src="assets/css/images/MarioPics/Mario1.png" height="=30%" width="30%">
-											<img src="assets/css/images/MarioPics/Mario2.png" height="=30%" width="30%">
+											<p>The collision for the level terrain are determined by a simple bitmap for each level and the player sprites positions are checked against it</p>
+											<p>This project is the first time I had to think about changing levels so I chose to recreate going down a pipe by detecting whether a player was above it and then moved them down the screen and used a Y-coordinate check to switch the level</p>
+											<!--<img src="assets/css/images/MarioPics/Mario1.png" height="=30%" width="30%">
+											<img src="assets/css/images/MarioPics/Mario2.png" height="=30%" width="30%">-->
+											<video width="1280" height="720" controls>
+												<source src="assets/css/videos/Mario.mp4" type="video/mp4">
+											</video>
 											<p><a href="https://github.com/BenjaminShawDev/Mario"target="_blank">Github link</a></p>
 											<p></p>
-											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 										</div>
 									</div>
 									
 									<div id="blackout3">
 										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 											<hl style="font-size:30px"><u>Asteroid Game</u></hl>
 											<p></p>
 											<p>A 3D game made in OpenGL where you get to control a space ship in an asteroid field</p>
-											<p>You have to dodge oncoming asteroids and survive as long as possible, there are also different powerups that your ship can pick up in order to help you</p>
-											<img src="assets/css/images/AsteroidPics/Asteroid1.png" height="=25%" width="25%">
-											<img src="assets/css/images/AsteroidPics/Asteroid2.png" height="=25%" width="25%">
+											<p>My first 3D project and it really helped me understand the basics of OpenGL and creating a game in a 3D space</p>
+											<p>There are a set amount of asteroids in the game and as soon as they go behind the camera they are sent back to the front of the game with random X and Y coordinates</p>
+											<p>I did collision detection by taking the position of the player and every asteroid each frame and using 3D Pythagoras' thereom to work out the distance between them and if it was smaller than a certain amount it would class as a collision</p>
+											<!--<img src="assets/css/images/AsteroidPics/Asteroid1.png" height="=25%" width="25%">
+											<img src="assets/css/images/AsteroidPics/Asteroid2.png" height="=25%" width="25%">-->
+											<video width="1280" height="720" controls>
+												<source src="assets/css/videos/Asteroid.mp4" type="video/mp4">
+											</video>
 											<img src="assets/css/images/AsteroidPics/AsteroidOBJs.png" height="=25%" width="25%">
 											<p><a href="https://github.com/BenjaminShawDev/OpenGL"target="_blank">Github link</a></p>
 											<p></p>
-											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 										</div>
 									</div>
 									
 									<div id="blackout4">
 										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 											<hl style="font-size:30px"><u>Knight Game</u></hl>
 											<p></p>
 											<p>A simple SDL game I made over the 2020 summer which has no objectives but was used to experiment with SDL</p>
-											<p>There is a grass and rock level which are both generated via a png file and the water tiles have collision</p>
-											<p>The camera also follows the player and both the player and the camera stop at the edges of the map</p>
-											<p>It was made with a mix of what I had learnt and an <a href="https://www.youtube.com/playlist?list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx"target="_blank" style="color:blue">online tutorial</a> which helped with aspects like an entity component system</p>
-											<img src="assets/css/images/SDLGamePics/SDL1.png" height="=40%" width="40%">
+											<p>The levels are generated from a PNG by taking the pixel colour of each pixel from the map file and converting it into a bitmap, if the pixel colour matched a tile that tile would be placed in the corresponding place in game</p>
+											<p>By also learning from an <a href="https://www.youtube.com/playlist?list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx"target="_blank" style="color:blue">online tutorial</a> it helped me create an entity component system which helped with moving the sprites around with the camera and adding properties like collision to the water tiles</p>
+											<p>The camera edge collision was done by creating a rectangle the size of the view port, the rectangle would detect when it has gone outside the specifed boundaries and stop the camera at the edge of the screen</p>
+											<p>The pause and options menu was the first time I had tried creating my own user interface and I added basic mouse support by creating a mouse collision function that detected when the mouse was over a highlighted option</p>
+											<p></p>
+											<!--<img src="assets/css/images/SDLGamePics/SDL1.png" height="=40%" width="40%">-->
+											<video width="1280" height="720" controls>
+												<source src="assets/css/videos/Knight.mp4" type="video/mp4">
+											</video>
 											<img src="assets/css/images/SDLGamePics/SDL2.png" height="=25%" width="25%">
 											<p></p>
-											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 										</div>
 									</div>
 									
 									<div id="blackout5">
 										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 											<hl style="font-size:30px"><u>DirectX Framework</u></hl>
 											<p></p>
 											<p>A framework created with DirectX 11 which has lighting, .obj and texture loading</p>
 											<p>Currently still being made</p>
 											<p></p>
-											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 										</div>
 									</div>
 									
 									<div id="blackout6">
 										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 											<hl style="font-size:30px"><u>Network Application</u></hl>
 											<p></p>
 											<p>A chat application that sends packets to and from a server to multiple clients and utilises multithreading</p>
 											<p>Currently still being made</p>
 											<p></p>
-											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
 										</div>
 									</div>
 								
