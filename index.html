@@ -32,6 +32,10 @@
 								<p></p>
 								<u>Projects:</u>
 								<p></p>
+								<a href="#blackout8" style="font-weight:bold;color:dodgerblue">(WIP) Uni DirectX AI Pathfinding Framework (C++ // DirectX 11 // 2D)</a>
+								<p></p>
+								<a href="#blackout7" style="font-weight:bold;color:dodgerblue">(WIP) Uni DirectX Physics Framework (C++ // DirectX 11 // 3D)</a>
+								<p></p>
 								<a href="#blackout6" style="font-weight:bold;color:dodgerblue">Uni DirectX Framework (C++ // DirectX 11 // 3D)</a>
 								<p></p>
 								<a href="#blackout5" style="font-weight:bold;color:dodgerblue">Uni Network Application (C# // Windows Forms // Multithreaded)</a>
@@ -92,6 +96,24 @@
 										display: none;
 									}
 									#blackout6 {
+										background: rgba(0, 0, 0, 0);
+										width: 100%;
+										height: 100%;
+										position: absolute;
+										top: 0;
+										left: 0;
+										display: none;
+									}
+									#blackout7 {
+										background: rgba(0, 0, 0, 0);
+										width: 100%;
+										height: 100%;
+										position: absolute;
+										top: 0;
+										left: 0;
+										display: none;
+									}
+									#blackout8 {
 										background: rgba(0, 0, 0, 0);
 										width: 100%;
 										height: 100%;
@@ -177,6 +199,30 @@
 										cursor:pointer;
 									  }
 									  #blackout6:target {display: block;}
+									  .close {
+										display: inline-block;
+										border: 1px solid #000000;
+										color: #ffffff;
+										padding: 0 12px;
+										margin: auto;
+										text-decoration: none;
+										background: #000000;
+										font-size: 20pt;
+										cursor:pointer;
+									  }
+									  #blackout7:target {display: block;}
+									  .close {
+										display: inline-block;
+										border: 1px solid #000000;
+										color: #ffffff;
+										padding: 0 12px;
+										margin: auto;
+										text-decoration: none;
+										background: #000000;
+										font-size: 20pt;
+										cursor:pointer;
+									  }
+									  #blackout8:target {display: block;}
 									  .close {
 										display: inline-block;
 										border: 1px solid #000000;
@@ -279,6 +325,7 @@
 											<video width="1152" height="648" controls>
 												<source src="assets/css/videos/CNA.mp4" type="video/mp4">
 											</video>
+											<p><a href="https://github.com/BenjaminShawDev/Network-Application"target="_blank"style="color:dodgerblue">Github link</a></p>
 											<p></p>
 										</div>
 									</div>
@@ -292,15 +339,34 @@
 											<p>The user can move around a 3D space and look around with basic mouse input with the option to switch between different cameras, which are each stored in an array, for different perspectives.</p>
 											<p>Pressing the left mouse button creates textured objects in front of them which are loaded from OBJ and DDS files. The object that is loaded can be changed and so can its material.</p>
 											<p>Pixel shading is implemented with the use of a shader file which is affected by the object material and the colour of the light can be changed as well.</p>
-											<p>On this project if I was to attempt it again I would improve looking around with the main camera as the current implementation is very basic and not great to use and to add more features like creating and deleting different lights.</p>
+											<p>On this project if I was to attempt it again I would improve looking around with the main camera as the current implementation is very basic and not great to use. Also to add more features like creating and deleting different lights and to restructure the code into more classes for better a better layout and control.</p>
 											<video width="1152" height="648" controls>
 												<source src="assets/css/videos/DXFramework.mp4" type="video/mp4">
 											</video>
+											<p><a href="https://github.com/BenjaminShawDev/DirectX-Framework"target="_blank"style="color:dodgerblue">Github link</a></p>
 											<p></p>
 										</div>
 									</div>
 									
-
+									<div id="blackout7">
+										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
+											<hl style="font-size:30px"><u>DirectX Physics Framework (WIP)</u></hl>
+											<p></p>
+											<p>A framework created with DirectX 11 where there will be 3D objects with realistic physics.</p>
+											<p></p>
+										</div>
+									</div>
+									
+									<div id="blackout8">
+										<div id="box">
+											<a href="#" class="close"><i class="far fa-times-circle"></i></a>
+											<hl style="font-size:30px"><u>DirectX AI Pathfinding Framework (WIP)</u></hl>
+											<p></p>
+											<p>A framework created with DirectX 11 that will use pathfinding to guide a racecar around a track and also use finite state machines and fuzzy state machines to handle decisions.</p>
+											<p></p>
+										</div>
+									</div>
 								
 							</ul>
 						</nav>
