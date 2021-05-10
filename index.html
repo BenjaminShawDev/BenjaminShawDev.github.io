@@ -28,7 +28,7 @@
 								<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/"target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://github.com/BenjaminShawDev"target="_blank" class="icon brands fa-github-square"><span class="label">Github</span></a></li>
 								<p></p>
-								<h1 style="font-size:30px">Currently in my second year studying computer games programming at Staffordshire University</h1>
+								<h1 style="font-size:30px">Currently in my second year studying Computer Games Programming at Staffordshire University</h1>
 								<p></p>
 								
 								<u>Projects:</u>
@@ -36,24 +36,43 @@
 								
 								<span>
 								<input type="checkbox" id="toggle7">
-								<label for="toggle7"><a>Uni DirectX AI Pathfinding Framework (C++ // DirectX 11 // 2D)</a></label>
+								<label for="toggle7"><a>Uni DirectX AI Pathfinding (C++ // DirectX 11 // 2D)</a></label>
 								<dialog>
 								<hl style="font-size:30px"><u>DirectX AI Pathfinding Framework</u></hl>
 								<label for="toggle7"><a>Close</a></label>
 								<p></p>
-								<p>A framework created with DirectX 11 that will use pathfinding to guide a racecar around a track and uses a finite state machines.</p>
+								<p>A framework created with DirectX 11 that uses pathfinding to guide a racecar around a track.</p>
+								<p>Uses the A* algorithm with a map of waypoints to create a path for the car to travel. Red waypoints are on the track and have a low travel cost, blue are off the track and have a high travel cost and yellow are checkpoints which the car travels to.</p>
+								<p>The car uses a finite state machine to change between different steering behaviours which are: seek, flee, arrive, pursuit, wander and laps.</p>
+								<p>There is also a second car which can be toggled (and is needed for flee and pursuit) which the main car has some basic decision making to try and avoid colliding with.</p>
+								<p>When in steering behaviours that do not require input from the user left clicking will instead place "oil" on the nearest waypoint, increasing the travel cost to it.</p>
+								<p>A powerup is also present that can be respawned and gives the waypoint it is in a lower travel cost. It gives the car a temporary speed boost.</p>
+								<p>If I was to attempt this again I would add improved steering to the car instead of it just snapping to a direction and also improve the decision making as it is currently very basic.</p>
+								<video width="640" height="360" controls>
+									<source src="assets/css/videos/AICar.mp4" type="video/mp4">
+								</video>
+								<img src="assets/css/images/AICar/Waypoints.png" height="=30%" width="30%">
 								<p></p>
 								</dialog>
 								</span>
 								
 								<span>
 								<input type="checkbox" id="toggle6">
-								<label for="toggle6"><a>Uni DirectX Physics Framework (C++ // DirectX 11 // 3D)</a></label>
+								<label for="toggle6"><a>Uni DirectX Physics (C++ // DirectX 11 // 3D)</a></label>
 								<dialog>
 								<hl style="font-size:30px"><u>DirectX Physics Framework</u></hl>
 								<label for="toggle6"><a>Close</a></label>
 								<p></p>
 								<p>A framework created with DirectX 11 which has basic collisions with 3D objects.</p>
+								<p>It has a free roam camera that can be toggled to have gravity and collisions with the surface below it.</p>
+								<p>Every moveable objects can have forces applied to them like gravity, friction, drag and thrust with each object having their own properties allowing for basic physics.</p>
+								<p>There is a "vehicle" which can be steered using the direction of the wheels or it can hover and fly, depending on the mode selected.</p>
+								<p>Each object also has their own hitbox to detect and handle collisions for example moving and rotating (via quaternions) the object which is hit or when an object is on solid ground.</p>
+								<p>A particle system has also been implemented to allow for particle effects which can be manipulated and they can be reused for different particles for better memory usage.</p>
+								<p>If I were to do this project again I would update the hitboxes to be more accurate and allow for the hitboxes to rotate with the object and to implement more realistic physics.</p>
+								<video width="640" height="360" controls>
+									<source src="assets/css/videos/DXPhysics.mp4" type="video/mp4">
+								</video>
 								<p></p>
 								</dialog>
 								</span>
@@ -71,7 +90,7 @@
 								<p>The user can move around a 3D space and look around with basic mouse input with the option to switch between different cameras, which are each stored in an array, for different perspectives.</p>
 								<p>Pressing the left mouse button creates textured objects in front of them which are loaded from OBJ and DDS files. The object that is loaded can be changed and so can its material.</p>
 								<p>Pixel shading is implemented with the use of a shader file which is affected by the object material and the colour of the light can be changed as well.</p>
-								<p>On this project if I was to attempt it again I would improve looking around with the main camera as the current implementation is very basic and not great to use. Also to add more features like creating and deleting different lights and to restructure the code into more classes for better a better layout and control.</p>
+								<p>On this project if I was to attempt it again I would improve the rotation of the main camera as the current implementation is very basic and not great to use. Also to add more features like creating and deleting different lights and to restructure the code into more classes for better a better layout and control.</p>
 								<video width="640" height="360" controls>
 									<source src="assets/css/videos/DXFramework.mp4" type="video/mp4">
 								</video>
@@ -106,7 +125,7 @@
 								<input type="checkbox" id="toggle3">
 								<label for="toggle3"><a>SDL Summer 2020 Project (C++ // SDL // 2D)</a></label>
 								<dialog>
-								<hl style="font-size:30px"><u>Knight SDL Test</u></hl>
+								<hl style="font-size:30px"><u>Summer SDL Project</u></hl>
 								<label for="toggle3"><a>Close</a></label>
 								<p></p>
 								<p>A simple SDL game I made in the summer of 2020 which has no objectives but was used to experiment with SDL.</p>
@@ -114,7 +133,7 @@
 								<p>By also learning from an <a href="https://www.youtube.com/playlist?list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx"target="_blank" style="color:dodgerblue">online tutorial</a> it helped me create an Entity Component System which helped with moving the sprites around with the camera and adding properties like collision to the water tiles.</p>
 								<p>The camera edge collision was done by creating a rectangle the size of the viewport, the rectangle would detect when it has gone outside the specifed boundaries and stop the camera at the edge of the screen.</p>
 								<p>The pause and options menu was the first time I had tried creating my own user interface and I added basic mouse support by creating a mouse collision function that detected when the mouse was over a highlighted option.</p>
-								<p>In the case that I do something like this again I would improve how the map tiles are handled as in the current system you can only have so many textures per level and switching levels is not done in a very efficient or clean way.</p>
+								<p>In the case that I do something like this again I would improve how the map tiles are handled as in the current system you can only have so many textures per level and level handling is not done in a very efficient or clean way.</p>
 								<video width="480" height="270" controls>
 									<source src="assets/css/videos/Knight.mp4" type="video/mp4">
 								</video>
