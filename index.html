@@ -47,10 +47,10 @@
 								<p>The game has both 2D and 3D sounds setup using a singleton class and only loads the sounds it needs for each level using the level system which utilises multithreading.</p>
 								<p>There is also a fully functioning UI system for the main menu, pause menu, the settings and the HUD. The settings make use of JSON files to read and save all the settings.</p>
 								<p>We also had an event system to handle many of the events throughtout the game and to keep the code more organised while not linking multiple systems together.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/Molecularity.mp4" type="video/mp4">
 								</video>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/MolSettings.mp4" type="video/mp4">
 								</video>
 								<p></p>
@@ -73,7 +73,7 @@
 								<p>When in steering behaviours that do not require input from the user left clicking will instead place "oil" on the nearest waypoint, increasing the travel cost to it.</p>
 								<p>A powerup is also present that can be respawned and gives the waypoint it is in a lower travel cost. It gives the car a temporary speed boost.</p>
 								<p>If I was to attempt this again I would add improved steering to the car instead of it just snapping to a direction and also improve the decision making as it is currently very basic.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/AICar.mp4" type="video/mp4">
 								</video>
 								<img src="assets/css/images/AICar/Waypoints.png" height="=30%" width="30%">
@@ -95,7 +95,7 @@
 								<p>Each object also has their own hitbox to detect and handle collisions for example moving and rotating (via quaternions) the object which is hit or when an object is on solid ground.</p>
 								<p>A particle system has also been implemented to allow for particle effects which can be manipulated and they can be reused for different particles for better memory usage.</p>
 								<p>If I were to do this project again I would update the hitboxes to be more accurate and allow for the hitboxes to rotate with the object and to implement more realistic physics.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/DXPhysics.mp4" type="video/mp4">
 								</video>
 								<p></p>
@@ -116,7 +116,7 @@
 								<p>Pressing the left mouse button creates textured objects in front of them which are loaded from OBJ and DDS files. The object that is loaded can be changed and so can its material.</p>
 								<p>Pixel shading is implemented with the use of a shader file which is affected by the object material and the colour of the light can be changed as well.</p>
 								<p>On this project if I was to attempt it again I would improve the rotation of the main camera as the current implementation is very basic and not great to use. Also to add more features like creating and deleting different lights and to restructure the code into more classes for better a better layout and control.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/DXFramework.mp4" type="video/mp4">
 								</video>
 								<p><a href="https://github.com/BenjaminShawDev/DirectX-Framework"target="_blank"style="color:dodgerblue">Github link</a></p>
@@ -136,7 +136,7 @@
 								<p>The server and each of the clients run on their own threads to reduce concurrency issues like freezing until a server response is received and it helps improve performance.</p>
 								<p>There is a paint window which allows the clients to paint on the same canvas by sending packets with which pixels coordinates had been drawn on and with what RGBA values to use.</p>
 								<p>If I was to do this again I would move packet handling to the client instead of the server and then send off more types of packets depending on what they are needed for like private or encrypted messages.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/CNA.mp4" type="video/mp4">
 								</video>
 								<p><a href="https://github.com/BenjaminShawDev/Network-Application"target="_blank"style="color:dodgerblue">Github link</a></p>
@@ -153,13 +153,13 @@
 								<hl style="font-size:30px"><u>Summer SDL Project</u></hl>
 								<label for="toggle3"><a>Close</a></label>
 								<p></p>
-								<p>A simple SDL game I made in the summer of 2020 which has no objectives but was used to experiment with SDL.</p>
+								<p width="30%" height="30%">A simple SDL game I made in the summer of 2020 which has no objectives but was used to experiment with SDL.</p>
 								<p>The levels are generated by taking the pixel colour of each pixel from the map's PNG file and converting it into a bitmap. If the pixel colour matched the requirements for a tile that tile would be placed in the corresponding place in the game.</p>
 								<p>By also learning from an <a href="https://www.youtube.com/playlist?list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx"target="_blank" style="color:dodgerblue">online tutorial</a> it helped me create an Entity Component System which helped with moving the sprites around with the camera and adding properties like collision to the water tiles.</p>
 								<p>The camera edge collision was done by creating a rectangle the size of the viewport, the rectangle would detect when it has gone outside the specifed boundaries and stop the camera at the edge of the screen.</p>
 								<p>The pause and options menu was the first time I had tried creating my own user interface and I added basic mouse support by creating a mouse collision function that detected when the mouse was over a highlighted option.</p>
 								<p>In the case that I do something like this again I would improve how the map tiles are handled as in the current system you can only have so many textures per level and level handling is not done in a very efficient or clean way.</p>
-								<video width="480" height="270" controls>
+								<video width="30%" height="30%" controls>
 									<source src="assets/css/videos/Knight.mp4" type="video/mp4">
 								</video>
 								<img src="assets/css/images/SDLGamePics/SDL2.png" height="=15%" width="15%">
@@ -179,7 +179,7 @@
 								<p>There are a set amount of asteroids in the game and when they go behind the camera they are translated back to the front of the game and with the use a random number generator are given random X and Y coordinates.</p>
 								<p>Collision detection was done by taking the position of the player and each asteroid and using 3D Pythagoras' thereom to calculate the distance between them and if it was smaller than the radius of the ship it would class as a collision.</p>
 								<p>In the future if I try something like this again I might try adding in better UI instead of a menu image and text with a 3D position which caused lighting to effect it. Also to also split the code into more classes as it mostly in the main class.</p>
-								<video width="640" height="360" controls>
+								<video width="35%" height="35%" controls>
 								<source src="assets/css/videos/Asteroid.mp4" type="video/mp4">
 								</video>
 								<img src="assets/css/images/AsteroidPics/AsteroidOBJs.png" height="=25%" width="25%">
@@ -201,7 +201,7 @@
 								<p>The collision for the terrain in each level is determined by a simple bitmap and the player sprite positions are checked against it to see if they are touching something which should be solid or not and then acts accordingly.</p>
 								<p>This project is the first time I had to think about changing levels so I chose to recreate going down a pipe by detecting whether a player was above it and then moved them down the screen and used a Y-coordinate check on the sprites to switch the level.</p>
 								<p>If I was try the project again I would redo how textures are loaded and deleted as they currently cause a small memory leak, probably by loading the assets initially instead of loading them each time they are used.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/Mario.mp4" type="video/mp4">
 								</video>
 								<p><a href="https://github.com/BenjaminShawDev/Mario"target="_blank"style="color:dodgerblue">Github link</a></p>
@@ -222,7 +222,7 @@
 								<p>There is a box that follows the mouse, the box can detect collisions via AABB collision, if the box touches a ghost the ghost is sent in the opposite direction, and while the box collides with Pacman it disappears.</p>
 								<p>If you pick up the skull the ghosts change behaviour, instead of travelling up or across they instead move towards Pacman by comparing their X and Y coordinates with Pacman's and move accordingly.</p>
 								<p>If I was to attempt this project again I would make it object orientated instead of having everything inside of one class as it was my first game in C++.</p>
-								<video width="640" height="360" controls>
+								<video width="40%" height="40%" controls>
 									<source src="assets/css/videos/Pacman.mp4" type="video/mp4">
 								</video>
 								<p><a href="https://github.com/s012103j/Pacman"target="_blank"style="color:dodgerblue">Github link</a></p>
