@@ -1187,10 +1187,16 @@ input, select, textarea {
 
 		label{
 		  background: dodgerblue;
-		  color: white;
 		  padding: .5em 1em;
 		  border-radius: 4px;
 		}
+		
+		.close{
+		  background: red;
+		  position: relative;
+		  left: 37%;
+		}
+		
 		@keyframes appear {
 		  0%{
 			opacity: 0;
