@@ -1,254 +1,223 @@
 <!DOCTYPE HTML>
 <!--
-	Aerial by HTML5 UP
+	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Benjamin Shaw</title>
+		<title>Benjamin Shaw Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="main">
-				
+		<!-- Wrapper -->
+			<div id="wrapper">
+
 				<!-- Header -->
 					<header id="header">
-						<img class="img-circle" src="assets/css/images/pictureOfMe.png" height="15%" width="15%">
-						<h1 style="font-size:3.5vw;">Benjamin Shaw</h1>
-						<p style="font-size:1.5vw;">Student &nbsp;&bull;&nbsp; Programmer &nbsp;&bull;&nbsp; Games</p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/Benjami75291244"target="_blank" class="icon brands fa-twitter-square"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/"target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/BenjaminShawDev"target="_blank" class="icon brands fa-github-square"><span class="label">Github</span></a></li>
-								<p></p>
-								<h1 style="font-size:1.6vw;">Currently doing my final year studying Computer Games Programming at Staffordshire University</h1>
-								<p></p>
-								
-								<u style="font-size:1.0vw;">Projects:</u>
-								<p></p>
-								
-								<span>
-								<input type="checkbox" id="toggle8">
-								<label for="toggle8"><a>Placement Project (C++ // DirectX 11 // 3D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>Self-Employed Placement Project</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle8"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A fully working game made entirely by me using DirectX 11 during my placement year.</p>
-								<p style="font-size:1.25vw;">It is a rougelike style game with the aim being to survive as many rooms as possible. There are 3 playable classes and over 100 items.</p>
-								<p style="font-size:1.25vw;">Made an item and card system where items could be added to the player to make them stronger and cards could be added to make the game harder in different ways.</p>
-								<p style="font-size:1.25vw;">There are different types of enemies throughout the game which use the A* algorithm for movement and there is a boss at the end of each floor with their own unique mechanics.</p>
-								<p style="font-size:1.25vw;">The game uses XAudio 2 for both 2D and 3D sounds in a singleton class. Level layouts and item information is loaded in from .xml files.</p>
-								<p style="font-size:1.25vw;">Created a UI system using HLSL which is used for the main menu, options menu and the HUD. Also made a text system that automatically aligns itself in the UI.</p>
-								<p style="font-size:1.25vw;">Further improvements that could have been made would be the inclusion of an animation system and further performance optimisations.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/Placement.mp4" type="video/mp4">
-								</video>
-								<p></p>
-								</dialog>
-								</span>
-								
-								<p></p>
-								
-								<span>
-								<input type="checkbox" id="toggle7">
-								<label for="toggle7"><a>Uni DirectX Group Project (C++ // DirectX 11 // 3D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>DirectX Group Project</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle7"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A short puzzle game where the player manipulates a cubes properties to complete the level.</p>
-								<p style="font-size:1.25vw;">The properties you can modify are the material, size, bounciness and conductivity. Each resulting in the cube behaving differently.</p>
-								<p style="font-size:1.25vw;">It has basic physics and collisions for the cubes, with properties like mass being changed by its material and size which also affects its other properties like how well it can bounce.</p>
-								<p style="font-size:1.25vw;">The game has both 2D and 3D sounds setup using a singleton class and only loads the sounds it needs for each level using the level system which utilises multithreading.</p>
-								<p style="font-size:1.25vw;">There is also a fully functioning UI system for the main menu, pause menu, the settings and the HUD. The settings make use of JSON files to read and save all the settings.</p>
-								<p style="font-size:1.25vw;">We also had an event system to handle many of the events throughtout the game and to keep the code more organised while not linking multiple systems together.</p>
-								<p style="font-size:1.25vw;">Personally I worked on many differnet areas but mainly focused on getting sounds and physics working working and optimised.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/Molecularity.mp4" type="video/mp4">
-								</video>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/MolSettings.mp4" type="video/mp4">
-								</video>
-								<p style="font-size:1.25vw;"><a href="https://github.com/kyle-robinson/molecularity"target="_blank"style="color:dodgerblue">Github link</a></p>
-								<p></p>
-								</dialog>
-								</span>
-								
-								<span>
-								<input type="checkbox" id="toggle6">
-								<label for="toggle6"><a>Uni DirectX AI Pathfinding (C++ // DirectX 11 // 2D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>DirectX AI Pathfinding Framework</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle6"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A framework created with DirectX 11 that uses pathfinding to guide a racecar around a track.</p>
-								<p style="font-size:1.25vw;">Uses the A* algorithm with a map of waypoints to create a path for the car to travel. Red waypoints are on the track and have a low travel cost, blue are off the track and have a high travel cost and yellow are checkpoints which the car travels to.</p>
-								<p style="font-size:1.25vw;">The car uses a finite state machine to change between different steering behaviours which are: seek, flee, arrive, pursuit, wander and laps.</p>
-								<p style="font-size:1.25vw;">There is also a second car which can be toggled (and is needed for flee and pursuit) which the main car has some basic decision making to try and avoid colliding with.</p>
-								<p style="font-size:1.25vw;">When in steering behaviours that do not require input from the user left clicking will instead place "oil" on the nearest waypoint, increasing the travel cost to it.</p>
-								<p style="font-size:1.25vw;">A powerup is also present that can be respawned and gives the waypoint it is in a lower travel cost. It gives the car a temporary speed boost.</p>
-								<p style="font-size:1.25vw;">If I was to attempt this again I would add improved steering to the car and fix some bugs in the pathfinding that were identified afterwards.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/AICar.mp4" type="video/mp4">
-								</video>
-								<img src="assets/css/images/AICar/Waypoints.png" height="=30%" width="30%">
-								<p></p>
-								</dialog>
-								</span>
-								
-								<p></p>
-								
-								<span>
-								<input type="checkbox" id="toggle5">
-								<label for="toggle5"><a>Uni DirectX Physics (C++ // DirectX 11 // 3D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>DirectX Physics Framework</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle5"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A framework created with DirectX 11 which has basic collisions with 3D objects.</p>
-								<p style="font-size:1.25vw;">It has a free roam camera that can be toggled to have gravity and collisions with the surface below it.</p>
-								<p style="font-size:1.25vw;">Every moveable objects can have forces applied to them like gravity, friction, drag and thrust with each object having their own properties allowing for basic physics.</p>
-								<p style="font-size:1.25vw;">There is a "vehicle" which can be steered using the direction of the wheels or it can hover and fly, depending on the mode selected.</p>
-								<p style="font-size:1.25vw;">Each object also has their own hitbox to detect and handle collisions for example moving and rotating (via quaternions) the object which is hit or when an object is on solid ground.</p>
-								<p style="font-size:1.25vw;">A particle system has also been implemented to allow for particle effects which can be manipulated and they can be reused for different particles for better memory usage.</p>
-								<p style="font-size:1.25vw;">If I were to do this project again I would update the hitboxes to be more accurate and allow for the hitboxes to rotate with the object and to implement more realistic physics.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/DXPhysics.mp4" type="video/mp4">
-								</video>
-								<p></p>
-								</dialog>
-								</span>
-								
-								<span>
-								<input type="checkbox" id="toggle4">
-								<label for="toggle4"><a>Uni DirectX Framework (C++ // DirectX 11 // 3D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>DirectX Framework</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle4"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A framework created with DirectX 11 in which the user can create and transform different textured 3D objects.</p>
-								<p style="font-size:1.25vw;">The user can move around a 3D space and look around with basic mouse input with the option to switch between different cameras, which are each stored in an array, for different perspectives.</p>
-								<p style="font-size:1.25vw;">Pressing the left mouse button creates textured objects in front of them which are loaded from OBJ and DDS files. The object that is loaded can be changed and so can its material.</p>
-								<p style="font-size:1.25vw;">Pixel shading is implemented with the use of a shader file which is affected by the object material and the colour of the light can be changed as well.</p>
-								<p style="font-size:1.25vw;">On this project if I was to attempt it again I would improve the rotation of the main camera as the current implementation is very basic and not great to use. Also to add more features like creating and deleting different lights and to restructure the code into more classes for better a better layout and control.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/DXFramework.mp4" type="video/mp4">
-								</video>
-								<p style="font-size:1.25vw;"><a href="https://github.com/BenjaminShawDev/DirectX-Framework"target="_blank"style="color:dodgerblue">Github link</a></p>
-								<p></p>
-								</dialog>
-								</span>
-								
-								<p></p>
-								
-								<span>
-								<input type="checkbox" id="toggle3">
-								<label for="toggle3"><a>Uni Network Application (C# // Windows Forms // Multithreaded)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>Network Application</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle3"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A chat application that sends packets to and from a server to multiple clients and utilises multithreading.</p>
-								<p style="font-size:1.25vw;">Using Windows Forms I created a basic GUI which easily allows the user to send packets containing messages to all the other clients or a specific client.</p>
-								<p style="font-size:1.25vw;">The server and each of the clients run on their own threads to reduce concurrency issues like freezing until a server response is received and it helps improve performance.</p>
-								<p style="font-size:1.25vw;">There is a paint window which allows the clients to paint on the same canvas by sending packets with which pixels coordinates had been drawn on and with what RGBA values to use.</p>
-								<p style="font-size:1.25vw;">If I was to do this again I would move packet handling to the client instead of the server and then send off more types of packets depending on what they are needed for like private or encrypted messages.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/CNA.mp4" type="video/mp4">
-								</video>
-								<p style="font-size:1.25vw;"><a href="https://github.com/BenjaminShawDev/Network-Application"target="_blank"style="color:dodgerblue">Github link</a></p>
-								<p></p>
-								</dialog>
-								</span>
-								
-								<span>
-								<input type="checkbox" id="toggle2">
-								<label for="toggle2"><a>SDL Summer 2020 Project (C++ // SDL // 2D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>Summer SDL Project</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle2"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A simple SDL game I made in the summer of 2020 which has no objectives but was used to experiment with SDL.</p>
-								<p style="font-size:1.25vw;">The levels are generated by taking the pixel colour of each pixel from the map's PNG file and converting it into a bitmap. If the pixel colour matched the requirements for a tile that tile would be placed in the corresponding place in the game.</p>
-								<p style="font-size:1.25vw;">By also learning from an <a href="https://www.youtube.com/playlist?list=PLhfAbcv9cehhkG7ZQK0nfIGJC_C-wSLrx"target="_blank" style="color:dodgerblue">online tutorial</a> it helped me create an Entity Component System which helped with moving the sprites around with the camera and adding properties like collision to the water tiles.</p>
-								<p style="font-size:1.25vw;">The camera edge collision was done by creating a rectangle the size of the viewport, the rectangle would detect when it has gone outside the specifed boundaries and stop the camera at the edge of the screen.</p>
-								<p style="font-size:1.25vw;">The pause and options menu was the first time I had tried creating my own user interface and I added basic mouse support by creating a mouse collision function that detected when the mouse was over a highlighted option.</p>
-								<p style="font-size:1.25vw;">In the case that I do something like this again I would improve how the map tiles are handled as in the current system you can only have so many textures per level and level handling is not done in a very efficient or clean way.</p>
-								<video width="30%" height="30%" controls>
-									<source src="assets/css/videos/Knight.mp4" type="video/mp4">
-								</video>
-								<img src="assets/css/images/SDLGamePics/SDL2.png" height="=15%" width="15%">
-								<p></p>
-								</dialog>
-								</span>
-								
-								<p></p>
-								
-								<span>
-								<input type="checkbox" id="toggle1">
-								<label for="toggle1"><a>Uni Asteroid OpenGL Project (C++ // OpenGL // 3D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>Asteroid Game</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle1"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A 3D game made in OpenGL where you get to control a space ship in an asteroid field.</p>
-								<p style="font-size:1.25vw;">This was my first 3D project and it really helped me understand the basics of OpenGL and creating a game in a 3D space.</p>
-								<p style="font-size:1.25vw;">There are a set amount of asteroids in the game and when they go behind the camera they are translated back to the front of the game and with the use a random number generator are given random X and Y coordinates.</p>
-								<p style="font-size:1.25vw;">Collision detection was done by taking the position of the player and each asteroid and using 3D Pythagoras' thereom to calculate the distance between them and if it was smaller than the radius of the ship it would class as a collision.</p>
-								<p style="font-size:1.25vw;">In the future if I try something like this again I might try adding in better UI instead of a menu image and text with a 3D position which caused lighting to effect it. Also to also split the code into more classes as it mostly in the main class.</p>
-								<video width="35%" height="35%" controls>
-								<source src="assets/css/videos/Asteroid.mp4" type="video/mp4">
-								</video>
-								<img src="assets/css/images/AsteroidPics/AsteroidOBJs.png" height="=25%" width="25%">
-								<p style="font-size:1.25vw;"><a href="https://github.com/BenjaminShawDev/OpenGL"target="_blank"style="color:dodgerblue">Github link</a></p>
-								<p></p>
-								</dialog>
-								</span>
-								
-								<span>
-								<input type="checkbox" id="toggle">
-								<label for="toggle"><a>Uni Mario Project (C++ // SDL // 2D)</a></label>
-								<dialog>
-								<hl style="font-size:1.6vw;"><u>Mario Game</u></hl>
-								<label class="label close" style="font-size:1.1vw;" for="toggle"><a>X</a></label>
-								<p></p>
-								<p style="font-size:1.25vw;">A short and simple Mario game made in SDL consisting of two levels and two players which are both controlled using a single keyboard.</p>
-								<p style="font-size:1.25vw;">The collision for the terrain in each level is determined by a simple bitmap and the player sprite positions are checked against it to see if they are touching something which should be solid or not and then acts accordingly.</p>
-								<p style="font-size:1.25vw;">This project is the first time I had to think about changing levels so I chose to recreate going down a pipe by detecting whether a player was above it and then moved them down the screen and used a Y-coordinate check on the sprites to switch the level.</p>
-								<p style="font-size:1.25vw;">If I was try the project again I would redo how textures are loaded and deleted as they currently cause a small memory leak, probably by loading the assets initially instead of loading them each time they are used.</p>
-								<video width="40%" height="40%" controls>
-									<source src="assets/css/videos/Mario.mp4" type="video/mp4">
-								</video>
-								<p style="font-size:1.25vw;"><a href="https://github.com/BenjaminShawDev/Mario"target="_blank"style="color:dodgerblue">Github link</a></p>
-								<p></p>
-								</dialog>
-								</span>
-								
-							</ul>
-						</nav>
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
 					</header>
-					
-					
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="Project Pages/FYP.html">Final Year Project</a></li>
+							<li><a href="Project Pages/FYAI.html">Final Year AI Projects</a></li>
+							<li><a href="Project Pages/FYGroup.html">Final Year Group Project</a></li>
+							<li><a href="Project Pages/FYLL.html">Low-Level Programming Project</a></li>
+							<li><a href="Project Pages/Placement.html">Placement Project</a></li>
+							<li><a href="Project Pages/SYGroup.html">2nd Year Group Project</a></li>
+							<li><a href="Project Pages/DXPhysics.html">DirectX Physics Project</a></li>
+							<li><a href="Project Pages/AIAStar.html">AI A* Pathfinding</a></li>
+							<li><a href="Project Pages/DXFramework.html">DirectX Framework</a></li>
+							<li><a href="Project Pages/Networking.html">Network Application</a></li>
+							<li><a href="Project Pages/Summer2020.html">SDL Summer 2020 Project</a></li>
+							<li><a href="Project Pages/Asteroids.html">Asteroid OpenGL Project</a></li>
+							<!--<li><a href="elements.html">Elements</a></li>-->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Benjamin Shaw</h1>
+								<p>Recently finished my final year studying Computer Games Programming (BSc) at Staffordshire University</p>
+							</header>
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/BenjaminShawDev" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/Benjami75291244" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/FYP.png" alt="" />
+									</span>
+									<a href="Project Pages/FYP.html">
+										<h2>Uni Final Year Project</h2>
+										<div class="content">
+											<h6>A simple colony simulation where the colonists are directed by a decision tree</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/FYAI.png" alt="" />
+									</span>
+									<a href="Project Pages/FYAI.html">
+										<h2>Uni Final Year AI Projects</h2>
+										<div class="content">
+											<h6>Four projects focused on Artificial Life, the MiniMax Algorithm, Genetic Algorithms and Neural Networks</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/FYGroup.png" alt="" />
+									</span>
+									<a href="Project Pages/FYGroup.html">
+										<h2>Final Year Group Project</h2>
+										<div class="content">
+											<h6>A game engine and game created in a group over the course of six weeks</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/FYLL.png" alt="" />
+									</span>
+									<a href="Project Pages/FYLL.html">
+										<h2>Uni Low-Level Programming Project</h2>
+										<div class="content">
+											<h6>A project focused improving efficiency and memory management</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/Placement.png" alt="" />
+									</span>
+									<a href="Project Pages/Placement.html">
+										<h2>Placement Project</h2>
+										<div class="content">
+											<h6>A fully playable game built from the ground up in DirectX 11 during my self-employed placement</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/SYGroup.png" alt="" />
+									</span>
+									<a href="Project Pages/SYGroup.html">
+										<h2>2nd Year Group Project</h2>
+										<div class="content">
+											<h6>Worked in a small group to create a puzzle game in DirectX</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/DXPhysics.png" alt="" />
+									</span>
+									<a href="Project Pages/DXPhysics.html">
+										<h2>Uni DirectX Physics Project</h2>
+										<div class="content">
+											<h6>Building upon the initial DirectX project to add physics, particles and more</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/AIAStar.png" alt="" />
+									</span>
+									<a href="Project Pages/AIAStar.html">
+										<h2>Uni AI A* Pathfinding</h2>
+										<div class="content">
+											<h6>Using the A* searching algorithm for pathfinding</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="images/DXFramework.png" alt="" />
+									</span>
+									<a href="Project Pages/DXFramework.html">
+										<h2>Uni Initial DirectX Application</h2>
+										<div class="content">
+											<h6>First time using DirectX and used it to create a simple 3D application</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/Networking.png" alt="" />
+									</span>
+									<a href="Project Pages/Networking.html">
+										<h2>Uni Network Application</h2>
+										<div class="content">
+											<h6>Used C# and Window Forms to make a chat program with multithreading where multiple clients connect to a server</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/Summer2020.png" alt="" />
+									</span>
+									<a href="Project Pages/Summer2020.html">
+										<h2>Uni Summer 2020 Project</h2>
+										<div class="content">
+											<h6>A basic SDL application which uses an image to create a map</h6>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/Asteroids.png" alt="" />
+									</span>
+									<a href="Project Pages/Asteroids.html">
+										<h2>Uni Asteroids OpenGL Project</h2>
+										<div class="content">
+											<h6>Used OpenGL for the first time to create a basic 3D game</h6>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
 
 				<!-- Footer -->
-					<!--<footer id="footer">
-						<span class="copyright">&copy; Benjamin Shaw 2021</span>
-					</footer>-->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
 
 			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FY AI - Benjamin Shaw Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="FYP.html">Final Year Project</a></li>
+							<li><a href="FYGroup.html">Final Year Group Project</a></li>
+							<li><a href="FYLL.html">Low-Level Programming Project</a></li>
+							<li><a href="Placement.html">Placement Project</a></li>
+							<li><a href="SYGroup.html">2nd Year Group Project</a></li>
+							<li><a href="DXPhysics.html">DirectX Physics Project</a></li>
+							<li><a href="AIAStar.html">AI A* Pathfinding</a></li>
+							<li><a href="DXFramework.html">DirectX Framework</a></li>
+							<li><a href="Networking.html">Network Application</a></li>
+							<li><a href="Summer2020.html">SDL Summer 2020 Project</a></li>
+							<li><a href="Asteroids.html">Asteroid OpenGL Project</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Final Year AI Projects</h1>
+							<span class="image main"><img src="../images/FYAI_Banner.png" alt="" /></span>
+							<h6>For each of these projects the base applications were provided by the University without AI with the goal to implement AI that performed adequately. I did not create any of these programs, I only added the AI to them.</h6>
+							<h2>Neural Network - Flappy Bird</h2>
+							<p>Originally this was a remade version of Flappy Bird that had to be played manually, Flappy Bird being a game where clicking causes the bird to "flap" making it move upwards with the goal to dodge incoming pipes. For this task a multi-layer perceptron neural network was created that took three inputs, had one hidden layer consisting of three nodes and had one output. The three inputs were distance from the floor, distance to the next pipe and the height of the gap. The output node was whether to flap or not.</p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/FYAI_FB1.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>A genetic algorithm was used to train the network with the run's time being used as the fitness value. To speed up the training of the network the code was edited to allow for an entire generation of birds to do a run simultaneously.</p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/FYAI_FB2.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>The end result was a bird that could survive indefinitely.</p>
+							<h2>Genetic Algorithm - Tower Defence</h2>
+							<p>The base game provided continually spawned waves of "enemies" with the player being able to place three types of towers around the path that the enemies followed. The towers consisted of an expensive one that did a lot of damage but attacked slowly and had a small range, a slightly cheaper one that did a small amount of damage but had a fast attack rate and large attack radius. The last tower was inbetween the other two.</p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/FYAI_GA.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>The goal of the genetic algorithm was for it to eventually reach a score of 200 which it managed to do, it was also done with multiple types of selection and crossover types. The genes consisted of three numbers representing an X and Y position and a tower type, the game would then try to place each of these towers accordingly. These genes were mutated between runs by randomising 10% of them in each chromosome. The elitist selection type ended up resulting in the best scoring run.</p>
+							<h2>MiniMax Algorithm</h2>
+							<p>Starting off with a simple 3D program that knew the rules of chess the aim was to utilise the Minimax algorithm for it to be able to play chess competently and with fast responses. The Minimax algorithm theoretically looks at every possible outcome, scores each possible state of the game and chooses the best outcome. Realistically looking at every possible outcome would take an extremely long time so for this program it was capped at a depth of three. It creates a tree structure with each depth alternating which player's turn it is. On the AI's turn it picks the maximum score, on the opponent's turn it picks the minimum score to represent the opponent doing the best move against the AI. </p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/FYAI_Chess.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>Alpha-beta pruning was also added to make it avoid going down nodes on the tree that could not produce a better outcome than the one that it already selected. This resulted in increased efficiency without changing the outcome. Some opening moves were also implemented to increase efficiency initially and a bit more intelligent. Once all this had been done it could beat people at chess without having to wait for it to think between turns.</p>
+							<h2>Artificial Life - Flocking</h2>
+							<p>This program focused on boids, a type of artifical life, where independent agents simulate flcoking behaviours as seen in birds and fish. By calculating alignment, cohesion and separation values for each boid based on nearby boids it can result in all the boids moving together without the need for communication between them. A predator was introduced to see if flcoking improved the flock's survival.</p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/FYAI_AL.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>Each boid also had slightly randomised values for attributes like movement speed and sight range. The effect of the alignment, cohesion and separation values could also be altered.</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/BenjaminShawDev" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/Benjami75291244" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

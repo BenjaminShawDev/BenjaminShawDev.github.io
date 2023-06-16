@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FY LLP - Benjamin Shaw Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="FYP.html">Final Year Project</a></li>
+							<li><a href="FYAI.html">Final Year AI Projects</a></li>
+							<li><a href="FYGroup.html">Final Year Group Project</a></li>
+							<li><a href="Placement.html">Placement Project</a></li>
+							<li><a href="SYGroup.html">2nd Year Group Project</a></li>
+							<li><a href="DXPhysics.html">DirectX Physics Project</a></li>
+							<li><a href="AIAStar.html">AI A* Pathfinding</a></li>
+							<li><a href="DXFramework.html">DirectX Framework</a></li>
+							<li><a href="Networking.html">Network Application</a></li>
+							<li><a href="Summer2020.html">SDL Summer 2020 Project</a></li>
+							<li><a href="Asteroids.html">Asteroid OpenGL Project</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Low-Level Programming Project</h1>
+							<span class="image main"><img src="../images/FYLL_Banner.png" alt="" /></span>
+							<p>For this project a software raytracing program was provided by the university which generated 100 frames of a scene involving spheres. The goal was to improve its efficiency while adding low-level memory management to it. The main way efficiency was improved was by using Visual Studio's monitoring tools to see where the CPU and memory are being used too much and redid those sections in a better way. Multithreading was also used to divide the rendering between threasds.</p>
+							<p>For memory management the new and delete keywords were overwritten to add headers and footers to requested memory with checks in them to make sure the memory had not been overwritten. The program also walked the heap using the headers and footers as another way to check memory integrity. A memory pool was also added which initialised a set amount of memory when the application starts.</p>
+							<span class="image main"><img src="../images/FYLL_Pic.png" alt="" /></span>
+							<p>It was also runs differently on Linux where instead of using threads it makes use of Linux's child processes via forking.</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/BenjaminShawDev" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/Benjami75291244" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

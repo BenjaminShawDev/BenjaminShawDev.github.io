@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FYP - Benjamin Shaw Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="FYAI.html">Final Year AI Projects</a></li>
+							<li><a href="FYGroup.html">Final Year Group Project</a></li>
+							<li><a href="FYLL.html">Low-Level Programming Project</a></li>
+							<li><a href="Placement.html">Placement Project</a></li>
+							<li><a href="SYGroup.html">2nd Year Group Project</a></li>
+							<li><a href="DXPhysics.html">DirectX Physics Project</a></li>
+							<li><a href="AIAStar.html">AI A* Pathfinding</a></li>
+							<li><a href="DXFramework.html">DirectX Framework</a></li>
+							<li><a href="Networking.html">Network Application</a></li>
+							<li><a href="Summer2020.html">SDL Summer 2020 Project</a></li>
+							<li><a href="Asteroids.html">Asteroid OpenGL Project</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Final Year Project - Managing a Colony with AI Using Decision Trees</h1>
+							<span class="image main"><img src="../images/FYP_Banner.png" alt="" /></span>
+							<p>A simple colony simulation created using C++ and DirectX 11 with the colonists being directed by a decision tree. The decision tree that was used assigned roles to each of the colonists based on the colony's current situation.</p>
+							<p>The colonists have multiple needs: food, water and warmth. Without these the colonists would die so they are sent out to collect food and heat sources (orange and brown squares respectively). Collecting these resources is split into two roles, the first of which goes out looking for resources and informs the colony when it finds one. The other role waits at the colony until it has been informed and then starts collected the resource that has been found. All colonists can drink water at the water source which is represented by the blue square.</p>
+							<p>Colonists can reproduce if they have been alive for a certain amount of time and if their "Maslow" value is high enough. This value is based of Maslow's Hierarchy of needs which produces a value based on their current hunger, thirst, warmth and safety values.</p>
+							<span class="image main"><img src="../images/FYP_Pic.png" alt="" /></span>
+							<p>The decision tree for this project was made by hand and only covers some of the basic apsects of managing a colony. The end nodes at the bottom of the tree represent roles/actions that the colonist would be instructed to do. A steady-state genetic algorithm was incorporated into the decision tree, represented by nodes with the X%, in order to find out what threholds for certain decisions resulted in the best outcome for the colony.</p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/FYP.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>The video above shows a colony using the decision tree with one of the genetic algorithm's first chromosomes.</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/BenjaminShawDev" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/Benjami75291244" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

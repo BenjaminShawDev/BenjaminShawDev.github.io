@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AI A* Pathfinding - Benjamin Shaw Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="FYP.html">Final Year Project</a></li>
+							<li><a href="FYAI.html">Final Year AI Projects</a></li>
+							<li><a href="FYGroup.html">Final Year Group Project</a></li>
+							<li><a href="FYLL.html">Low-Level Programming Project</a></li>
+							<li><a href="Placement.html">Placement Project</a></li>
+							<li><a href="SYGroup.html">2nd Year Group Project</a></li>
+							<li><a href="DXPhysics.html">DirectX Physics Project</a></li>
+							<li><a href="DXFramework.html">DirectX Framework</a></li>
+							<li><a href="Networking.html">Network Application</a></li>
+							<li><a href="Summer2020.html">SDL Summer 2020 Project</a></li>
+							<li><a href="Asteroids.html">Asteroid OpenGL Project</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>AI A* Pathfinding Project</h1>
+							<span class="image main"><img src="../images/AIAStar_Banner.png" alt="" /></span>
+							<p>A framework created with DirectX 11 that uses pathfinding to guide a racecar around a track. It uses the A* algorithm with a map of waypoints to create a path for the car to travel. Red waypoints are on the track and have a low travel cost, blue are off the track and have a high travel cost and yellow are checkpoints which the car travels to.</p>
+							<span class="image centre"><video width=100% height=100% controls>
+								<source src="../videos/AIAStar.mp4" type="video/mp4" alt=""></video>
+							</span>
+							<p>The car uses a finite state machine to change between different steering behaviours which are: seek, flee, arrive, pursuit, wander and laps. There is also a second car which can be toggled (and is needed for flee and pursuit) which the main car has some basic decision making to try and avoid colliding with.</p>
+							<span class="image main"><img src="../images/AIAStar_Pic.png" alt="" /></span>
+							<p>When in steering behaviours that do not require input from the user left clicking will instead place "oil" on the nearest waypoint, increasing the travel cost to it. A powerup is also present that can be respawned and gives the waypoint it is in a lower travel cost. It gives the car a temporary speed boost.</p>
+							<p>After the project was completed a bug with the pathfinding was identified where it didn't always get all of the neighbouring nodes. When fixed it resulted in the algorithm constructing paths that no longer zigzagged.</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/benjamin-shaw-37a412195/" target="_blank" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/BenjaminShawDev" target="_blank" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://twitter.com/Benjami75291244" target="_blank" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
